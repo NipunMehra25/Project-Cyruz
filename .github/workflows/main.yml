@@ -1,1 +1,25 @@
+name: Tixify Basic Workflow
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Node.js Setup (if you're using JS)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Tests (optional)
+        run: echo "Add your tests here"
+
+      - name: Done
+        run: echo "Workflow completed"
 
