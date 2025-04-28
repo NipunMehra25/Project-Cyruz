@@ -1,4 +1,4 @@
-name: Tixify Basic Workflow
+name: Cyrus Basic Workflow
 
 on: [push]
 
